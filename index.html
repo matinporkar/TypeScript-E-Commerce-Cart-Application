@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mini E-Commerce Cart</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>🛒 Mini E-Commerce</h1>
+  </header>
+
+  <main class="container">
+    <section class="products card">
+      <h2>Products</h2>
+      <div id="products-grid" class="products-grid"></div>
+    </section>
+
+    <aside class="cart card" id="cart-panel">
+      <h2>Your Cart</h2>
+      <div id="cart-items" class="cart-items"></div>
+      <div class="cart-summary">
+        <div>Subtotal: <strong id="subtotal">0$</strong></div>
+        <div>Tax (10%): <strong id="tax">0$</strong></div>
+        <div>Total: <strong id="total">0$</strong></div>
+      </div>
+      <div class="cart-actions">
+        <button id="checkout-btn">Checkout</button>
+        <button id="clear-cart" class="muted">Clear Cart</button>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="footer">
+    <small>Mini E-Commerce Cart — Matin</small>
+  </footer>
+
+  <script type="module" src="./dist/app.js"></script>
+</body>
+</html>
